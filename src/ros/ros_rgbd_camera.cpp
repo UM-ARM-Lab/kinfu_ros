@@ -45,7 +45,7 @@ namespace kfusion
 
         if (hasNewRGB)
         {
-            cv_bridge::CvImageConstPtr cvColor = cv_bridge::toCvShare(lastRGBImage, "rgb8");
+            cv_bridge::CvImageConstPtr cvColor = cv_bridge::toCvShare(lastRGBImage, "");
 
             if (!cvColor)
             {

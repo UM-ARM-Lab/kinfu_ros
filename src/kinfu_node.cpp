@@ -22,8 +22,10 @@ int main(int argc, char* argv[])
 
     ros::NodeHandle node("~");
     RosRGBDCamera camera(node);
-    camera.SubscribeDepth("/camera/depth/image_raw");
-    camera.SubscribeRGB("/camera/rgb/image_rect_color");
+    // camera.SubscribeDepth("/camera/depth/image_raw");
+    // camera.SubscribeRGB("/camera/rgb/image_rect_color");
+    camera.SubscribeDepth("/kinect2/sd/image_depth_rect");
+    camera.SubscribeRGB("/kinect2/sd/image_color_rect");
     std::string fixedFrame = "/map";
     std::string cameraFrame = "/camera_depth_optical_frame";
     node.param<std::string>("fixed_Frame", fixedFrame, "/map");

@@ -1,3 +1,9 @@
+ARM Lab
+=========
+Compilation:
+Set Cmake vairable: CUDA_USE_STATIC_CUDA_RUNTIME=OFF
+
+
 KinFu ros
 =========
 This is a ROS-generic version of  [kinfu_remake](https://github.com/Nerei/kinfu_remake). It aims to make the package usable without any reference to `OpenNI`, with no assumptions about the kind of depth sensor used. It also aims to make data from the `kinfu` pipeline available via ROS service calls and messages.
